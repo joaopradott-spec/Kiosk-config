@@ -1,4 +1,4 @@
-kiosk_config=https://raw.githubusercontent.com/joaopradott-spec/Kiosk-config/refs/heads/main/KioskConfig.html
+kiosk_config=https://githubusercontent.com
 connection=wifi
 dhcp=yes
 
@@ -7,14 +7,18 @@ onscreen_buttons_position=top_right
 wifi_encryption=wpa
 wpa_password=bocarosa10
 ssid_name=sebratel_ana_5G
-run_command=rm -f /home/guest/.mozilla/firefox/c3pp43bg.default/chrome/userContent.css
-browser=firefox
+
+# BROWSER CONFIGURATION (Alterado para o Chrome)
+browser=chrome
 browser_dark_mode=yes
-homepage=https://joaopradott-spec.github.io/TV-Box-By-Lem/
+homepage=https://github.io
 persistence=full
 disable_private_mode=yes
 volume_controls=yes
-browser_preferences=https://raw.githubusercontent.com/joaopradott-spec/Kiosk-config/refs/heads/main/firefox-prefs.txt
+
+# IMPORTANTE: Altere o arquivo abaixo no seu GitHub para conter políticas JSON do Chrome (Managed Policies)
+browser_preferences=https://githubusercontent.com
+
 screen_settings=eDP-1:disabled HDMI-2:1920x1080:60.00:normal:normal:normal
 additional_components=uefi.zip
 
