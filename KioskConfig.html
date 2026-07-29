@@ -1,21 +1,20 @@
-
 kiosk_config=https://raw.githubusercontent.com/joaopradott-spec/Kiosk-config/refs/heads/main/KioskConfig.html
-
 connection=wifi
-network_interface=wlan0
 dhcp=yes
 
-ssid_name=sebratel_ana_5G
+onscreen_buttons=back forward refresh home
+onscreen_buttons_position=top_right
 wifi_encryption=wpa
 wpa_password=bocarosa10
-
-browser=chrome
+ssid_name=sebratel_ana_5G
+run_command=rm -f /home/guest/.mozilla/firefox/c3pp43bg.default/chrome/userContent.css
+browser=firefox
 browser_dark_mode=yes
 homepage=https://joaopradott-spec.github.io/TV-Box-By-Lem/
 persistence=full
 disable_private_mode=yes
 volume_controls=yes
-
+browser_preferences=https://raw.githubusercontent.com/joaopradott-spec/Kiosk-config/refs/heads/main/firefox-prefs.txt
 screen_settings=eDP-1:disabled HDMI-2:1920x1080:60.00:normal:normal:normal
 additional_components=uefi.zip
 
